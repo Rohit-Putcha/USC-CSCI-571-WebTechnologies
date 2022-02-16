@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<head>
+<style>
+    .header {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1254px;
+        height: 80px;
+        border: 1px solid red;
+    }
+    .text{
+        color: white;
+        font-size: 30px;
+        margin: 50px;
+        border: 1px solid red;
+    }
+    .header_image {
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1254px;
+        height: 300px;
+        position: relative;
+    }
+    .header_image .centered .la_text {
+        font-size: 35px;
+        text-align: center;
+        color: white;
+    }
+    .header_image img{
+        height:300px;
+        width: 1254px;
+        object-fit: cover;
+        object-position: 50% 85%;
+    }
+    .centered {
+        position: absolute;
+        border: 1px solid red;
+        float: left;
+        left: 450px;
+        top: 95px;
+    }
+    .general_info{
+        height:400px;
+        width: 1254px;
+        justify-content: center;
+        background-color: grey;
+        text-align: center;
+        border: 1px solid red;
+        display: flex;
+    }
+
+    .general_info_child{
+        height:300px;
+        width: 200px;
+        justify-content: center;
+        background-color: grey;
+        text-align: center;
+        border: 1px solid red;
+        margin: 50px;
+    }
+
+    .general_info_child_image{
+        height:100px;
+        width: 190px;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid red;
+        margin: 5px;
+    }
+
+    .general_info_child_text{
+        height:180px;
+        width: 190px;
+        justify-content: center;
+        background-color: grey;
+        text-align: center;
+        border: 1px solid red;
+        margin: 5px;
+    }
+
+    .la_info{
+        height:400px;
+        width: 1254px;
+        justify-content: center;
+        background-color: black;
+        text-align: center;
+        border: 3px solid blue;
+    }
+
+    .la_info_child{
+        height:240px;
+        width: 900px;
+        justify-content: center;
+        background-color: black;
+        text-align: center;
+        border: 3px solid blue;
+        margin: 80px;
+        margin-left: 177px;
+        margin-right: 177px;
+        display: flex;
+    }
+
+    .la_info_child_image{
+        height:230px;
+        width: 300px;
+        justify-content: center;
+        background-color: black;
+        text-align: center;
+        border: 1px solid blue;
+        margin: 5px;
+    }
+
+    .la_info_child_text{
+        height:230px;
+        width: 600px;
+        justify-content: center;
+        background-color: black;
+        text-align: center;
+        border: 1px solid blue;
+        margin: 5px;
+    }
+
+    .la_info_2{
+        height:400px;
+        width: 1254px;
+        justify-content: center;
+        background-color: grey;
+        text-align: center;
+        border: 1px solid red;
+    }
+
+    .la_info_2_child{
+        height:120px;
+        width: 900px;
+        justify-content: center;
+        background-color: black;
+        text-align: center;
+        border: 1px solid blue;
+        margin-left: 177px;
+        margin-right: 177px;
+        margin-top: 80px;
+        display: flex;
+    }
+
+    .la_info_2_child_1{
+        height:120px;
+        width: 900px;
+        justify-content: center;
+        background-color: black;
+        text-align: center;
+        border: 1px solid blue;
+        margin-left: 177px;
+        margin-right: 177px;
+        margin-bottom: 80px;
+        display: flex;
+    }
+
+    .la_info_2_child_image{
+        height:115px;
+        width: 300px;
+        justify-content: center;
+        background-color: black;
+        text-align: center;
+        border: 1px solid blue;
+        margin: 2.5px;
+    }
+
+    .la_info_2_child_text{
+        height:115px;
+        width: 600px;
+        justify-content: center;
+        background-color: black;
+        text-align: center;
+        border: 1px solid blue;
+        margin: 2.5px;
+    }
+
+    .footer{
+        height:150px;
+        width: 1254px;
+        justify-content: center;
+        background-color: black;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        border: 1px solid yellow;
+    }
+
+    .footer-child-quote {
+    width: 50%;
+    height: 100%;
+    float: left;
+    border: 1px solid red;
+    text-align: center;
+    color: white;
+    }   
+    
+    .footer-child-dev-details{
+    width: 50%;
+    height: 100%;
+    float: left;
+    border: 1px solid red;
+    text-align:center;
+    color: white;
+    }   
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    a{
+        text-decoration: none;
+    }
+</style>
+<script>
+    function mouseOver(elem){
+        elem.style.color = 'orange';
+    }
+    function mouseLeave(elem){
+        elem.style.color = 'white';
+    }
+
+    function loadFromJson(){
+        fetch("./data/data.json")
+        .then(response => {
+        return response.json();
+    })
+    .then(jsondata => alert(jsondata));
+
+    //var json = require('./data/data.json');
+    //alert(json);
+    }
+</script>
+</head>
+<body onload="loadFromJson()">
+    <div class="container">
+        <div class="header">
+            <a class="text" href="" onmouseover="mouseOver(this)" onmouseleave="mouseLeave(this)">Home</a>
+            <a class="text" href="" onmouseover="mouseOver(this)" onmouseleave="mouseLeave(this)">Explore</a>
+            <a class="text" href="" onmouseover="mouseOver(this)" onmouseleave="mouseLeave(this)">Contact</a>
+        </div>
+        <div id="page">
+        <div class="header_image">
+            <img class="parent" src="data\rodeo-drive.jpg" alt="LA - The City of Angels">
+            <div class="centered">
+                <p class="la_text">LA - The City of Angels</p>
+            </div>
+        </div>
+        <div class="general_info">
+            <div class="general_info_child">
+                <div class="general_info_child_image">
+                    <img src="data\griffith.jpg" alt="LA - The City of Angels" style="width: 100%; height: 100%;">
+                </div>
+                <div class="general_info_child_text"></div>
+            </div>
+            <div class="general_info_child">
+                <div class="general_info_child_image"></div>
+                <div class="general_info_child_text"></div>
+            </div>
+            <div class="general_info_child">
+                <div class="general_info_child_image"></div>
+                <div class="general_info_child_text"></div>
+            </div>
+        </div>
+        <div class="la_info">
+            <div class="la_info_child">                
+                <div class="la_info_child_text"></div>
+                <div class="la_info_child_image"></div>
+            </div>
+        </div>
+        <div class="la_info_2">
+            <div class="la_info_2_child">
+                <div class="la_info_2_child_text"></div>            
+                <div class="la_info_2_child_image"></div>
+            </div>
+            <div class="la_info_2_child_1">
+                <div class="la_info_2_child_image"></div>            
+                <div class="la_info_2_child_text"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-child-quote">
+                <p style="margin-top: 40px ;">Tip the world on its side and everything loose will land
+                <br>in Los Angeles.</br>
+                <br>-Frank Lloyd Wright</br>
+                </p>
+            </div>
+            <div class="footer-child-dev-details">
+                <p style="margin-top: 10px ;">Designed by
+                    <br></br>
+                    <br>Rohit Kumar Putcha</br></p>
+                    <p><a href="mailto: rputcha@usc.edu" style="color: white;"> rputcha@usc.edu</a>
+                    <br><a href="tel:425-435-1911" style="color: white;">(+1) 425 435 1911</a></br>
+                    </p>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
