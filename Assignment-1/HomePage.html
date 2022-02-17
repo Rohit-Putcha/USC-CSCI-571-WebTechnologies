@@ -2,199 +2,173 @@
 <head>
 <style>
     .header {
-        background-color: black;
+        background-color: rgb(15, 15, 15);
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 1254px;
+        width: 1264px;
         height: 80px;
-        border: 1px solid red;
     }
     .text{
         color: white;
         font-size: 30px;
         margin: 50px;
-        border: 1px solid red;
+        font-family: sans-serif;
+        text-shadow: orange 2px 2px;
     }
-    .header_image {
-        border: 1px solid red;
+    .header-image {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 1254px;
+        width: 1264px;
         height: 300px;
         position: relative;
     }
-    .header_image .centered .la_text {
+
+    .header-image .centered .la-text {
         font-size: 35px;
         text-align: center;
-        color: white;
+        color: orange;
+        font-family: sans-serif;
+        text-shadow: white 2px 2px;
     }
-    .header_image img{
+    .header-image img{
         height:300px;
-        width: 1254px;
+        width: 1264px;
         object-fit: cover;
         object-position: 50% 85%;
     }
     .centered {
         position: absolute;
-        border: 1px solid red;
         float: left;
         left: 450px;
         top: 95px;
     }
-    .general_info{
-        height:400px;
-        width: 1254px;
+
+    #general-info{
+        height:600px;
+        width: 1264px;
         justify-content: center;
-        background-color: grey;
+        background-color: rgb(47, 47, 47);
         text-align: center;
-        border: 1px solid red;
         display: flex;
+        color: white;
     }
 
-    .general_info_child{
-        height:300px;
-        width: 200px;
-        justify-content: center;
-        background-color: grey;
-        text-align: center;
-        border: 1px solid red;
-        margin: 50px;
-    }
-
-    .general_info_child_image{
-        height:100px;
-        width: 190px;
+    .general-info-child{
+        height:430px;
+        width: 260px;
         justify-content: center;
         text-align: center;
-        border: 1px solid red;
-        margin: 5px;
+        margin-right: 20px;
+        margin-top: 90px;
+        margin-bottom: 90px;
+        background-color: rgb(15, 15, 15);;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
     }
 
-    .general_info_child_text{
-        height:180px;
-        width: 190px;
+    .general-info-child-image{
+        height:150px;
+        width: 240px;
         justify-content: center;
-        background-color: grey;
         text-align: center;
-        border: 1px solid red;
-        margin: 5px;
+        margin: 10px;
     }
 
-    .la_info{
-        height:400px;
-        width: 1254px;
+    .general-info-child-text{
+        height:250px;
+        width: 240px;
         justify-content: center;
-        background-color: black;
         text-align: center;
-        border: 3px solid blue;
+        margin: 10px;
     }
 
-    .la_info_child{
+    #la-info{
+        height:600px;
+        width: 1264px;
+        justify-content: center;
+        background-color: rgb(15, 15, 15);
+        text-align: center;
+    }
+
+    .la-info-child{
         height:240px;
         width: 900px;
         justify-content: center;
-        background-color: black;
+        background-color: rgb(15, 15, 15);;
         text-align: center;
-        border: 3px solid blue;
-        margin: 80px;
+        margin-left: 177px;
+        margin-right: 177px;
+        margin-top: 180px;
+        display: flex;
+    }
+
+    .la-info-child-image{
+        height:220px;
+        width: 400px;
+        justify-content: center;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .la-info-child-text{
+        height:220px;
+        width: 420px;
+        justify-content: center;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #la-info-2{
+        height:600px;
+        width: 1264px;
+        justify-content: center;
+        background-color: rgb(47, 47, 47);
+        text-align: center;
+    }
+
+    .la-info-2-child{
+        height:200px;
+        width: 900px;
+        justify-content: center;
+        text-align: center;
         margin-left: 177px;
         margin-right: 177px;
         display: flex;
     }
 
-    .la_info_child_image{
-        height:230px;
-        width: 300px;
+    .la-info-2-child-image{
+        height:195px;
+        width: 295px;
         justify-content: center;
-        background-color: black;
         text-align: center;
-        border: 1px solid blue;
         margin: 5px;
     }
 
-    .la_info_child_text{
-        height:230px;
-        width: 600px;
+    .la-info-2-child-text{
+        height:195px;
+        width: 545px;
         justify-content: center;
-        background-color: black;
         text-align: center;
-        border: 1px solid blue;
         margin: 5px;
-    }
-
-    .la_info_2{
-        height:400px;
-        width: 1254px;
-        justify-content: center;
-        background-color: grey;
-        text-align: center;
-        border: 1px solid red;
-    }
-
-    .la_info_2_child{
-        height:120px;
-        width: 900px;
-        justify-content: center;
-        background-color: black;
-        text-align: center;
-        border: 1px solid blue;
-        margin-left: 177px;
-        margin-right: 177px;
-        margin-top: 80px;
-        display: flex;
-    }
-
-    .la_info_2_child_1{
-        height:120px;
-        width: 900px;
-        justify-content: center;
-        background-color: black;
-        text-align: center;
-        border: 1px solid blue;
-        margin-left: 177px;
-        margin-right: 177px;
-        margin-bottom: 80px;
-        display: flex;
-    }
-
-    .la_info_2_child_image{
-        height:115px;
-        width: 300px;
-        justify-content: center;
-        background-color: black;
-        text-align: center;
-        border: 1px solid blue;
-        margin: 2.5px;
-    }
-
-    .la_info_2_child_text{
-        height:115px;
-        width: 600px;
-        justify-content: center;
-        background-color: black;
-        text-align: center;
-        border: 1px solid blue;
-        margin: 2.5px;
     }
 
     .footer{
         height:150px;
-        width: 1254px;
+        width: 1264px;
         justify-content: center;
-        background-color: black;
+        background-color: rgb(15, 15, 15);;
         text-align: center;
         display: flex;
         align-items: center;
-        border: 1px solid yellow;
+        color: white;
     }
 
     .footer-child-quote {
     width: 50%;
     height: 100%;
     float: left;
-    border: 1px solid red;
     text-align: center;
     color: white;
     }   
@@ -203,12 +177,11 @@
     width: 50%;
     height: 100%;
     float: left;
-    border: 1px solid red;
     text-align:center;
     color: white;
     }   
 
-    .container {
+    #container {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -217,90 +190,220 @@
     a{
         text-decoration: none;
     }
+
+    body{
+        margin: 0px; 
+        padding: 0px;
+    }
 </style>
 <script>
     function mouseOver(elem){
         elem.style.color = 'orange';
+        elem.style.setProperty('text-shadow', 'white 2px 2px');
     }
     function mouseLeave(elem){
         elem.style.color = 'white';
+        elem.style.setProperty('text-shadow', 'orange 2px 2px');
     }
 
     function loadFromJson(){
-        fetch("./data/data.json")
+        fetch("data/data.json")
         .then(response => {
         return response.json();
     })
-    .then(jsondata => console.log(jsondata));
-
-    //var json = require('./data/data.json');
-    //alert(json);
+    .then(function(jsonData) {
+        renderData(jsonData);
+    })
     }
 
+    function renderData(jsonData){
+        
+        populateGeneralInfoTag(jsonData)
+
+        populateLaInfoTag(jsonData)
+
+        populateLaInfo2Tag(jsonData)
+    }
+
+    function createImageTag(element, name = ""){
+        let image = document.createElement("img");
+
+        if (element !== undefined && name === ""){
+            image.src = "data/".concat(element["image"]);
+            image.alt = element["heading"];
+        }
+        else{
+            image.src = "data/".concat("lasky.png");
+            image.alt = "Los Angeles Sky View";
+        }
+
+        image.style.width = "100%";
+        image.style.height = "100%";
+
+        return image;
+    }
+
+    function createDivTagWithClassName(className){
+        let div = document.createElement("div");
+        div.className = className;
+        return div;
+    }
+
+    function populateGeneralInfoTag(jsonData){
+        let general_info = document.getElementById("general-info");
+        
+        Object.values(jsonData["section2"]).forEach(element => {
+            var general_info_child = createDivTagWithClassName("general-info-child");
+
+            var image_div = createDivTagWithClassName("general-info-child-image");
+
+            let image = createImageTag(element);
+
+            image_div.appendChild(image);
+
+            let text_div = createDivTagWithClassName("general-info-child-text");
+
+            let heading = document.createElement("p");
+            heading.className = "general-info-child-text-heading";
+            heading.innerText = element["heading"];
+            heading.style = "text-align: left; margin: 0px; font-size: 20px; font-family:sans-serif;";
+
+            let paragraph = document.createElement("p");
+            paragraph.className = "general-info-child-text-paragraph";
+            paragraph.innerText = element["text"];
+            paragraph.style = "text-align: left; font-family:sans-serif;";
+
+            text_div.appendChild(heading);
+            text_div.appendChild(paragraph);
+
+            general_info_child.appendChild(image_div);
+            general_info_child.appendChild(text_div);
+
+            general_info.appendChild(general_info_child);
+        });
+    }
+
+    function populateLaInfoTag(jsonData){
+        var la_info = document.getElementById("la-info");
+       
+        var child_div = createDivTagWithClassName("la-info-child");
+
+        var image_div = createDivTagWithClassName("la-info-child-image");
+        
+        let image = createImageTag(undefined, "lasky.png");
+        
+        let text_div = document.createElement("div");
+        text_div.className = "la-info-child-text";
+
+        Object.values(jsonData["section3"]["text"]).forEach(element => {
+            let text = document.createElement("p");
+            text.innerText = element
+            text.style = "color: white; margin-top: 0px; text-align: justify; font-family:sans-serif; font-size: 15px;";
+
+            text_div.appendChild(text);
+        });
+        
+        image_div.appendChild(image);
+
+        child_div.append(text_div);
+        child_div.append(image_div);
+
+        la_info.appendChild(child_div);
+    }
+
+    function populateLaInfo2Tag(jsonData){
+        var la_info_2 = document.getElementById("la-info-2");
+        
+        let align = true;
+        Object.values(jsonData["section4"]).forEach(element => {
+            align = !align;
+            console.log(align);
+            var child_div = createDivTagWithClassName("la-info-2-child");
+
+            let image_div = createDivTagWithClassName("la-info-2-child-image");
+            let image = createImageTag(element);
+            image_div.append(image);
+
+            let text_div = createDivTagWithClassName("la-info-2-child-text");
+            let heading = document.createElement("p");
+            heading.innerText = element["heading"];
+            heading.style = "color: white; text-align: left; margin-top: 0px; font-size: 20px; font-family:sans-serif;";
+
+            let paragraph = document.createElement("p");
+            paragraph.innerText = element["text"];
+            paragraph.style = "color: white; font-size: 15px; margin-bottom: 0px; text-align: justify; font-family:sans-serif;";
+        
+            text_div.append(heading);
+            text_div.append(paragraph);
+
+            if (align === false){
+                child_div.style.setProperty('margin-top', '100px');
+                heading.style.setProperty("text-align", "left");
+
+                child_div.append(image_div);
+                child_div.append(text_div);
+            }
+            else{
+                child_div.style.setProperty('margin-bottom', '100px');
+                heading.style.setProperty("text-align", "right");
+
+                child_div.append(text_div);
+                child_div.append(image_div);
+            }
+
+            la_info_2.appendChild(child_div);
+        });
+    }
 </script>
 </head>
 <body onload="loadFromJson()">
-    <div class="container">
+    <div id="container">
         <div class="header">
-            <a class="text" href="" onmouseover="mouseOver(this)" onmouseleave="mouseLeave(this)">Home</a>
-            <a class="text" href="" onmouseover="mouseOver(this)" onmouseleave="mouseLeave(this)">Explore</a>
-            <a class="text" href="" onmouseover="mouseOver(this)" onmouseleave="mouseLeave(this)">Contact</a>
+            <a class="text"
+            href = "HomePage.html"
+            onmouseover="mouseOver(this)" 
+            onmouseleave="mouseLeave(this)"
+            onclick="onCLick(this)">Home</a>
+            
+            <a class="text" 
+            href = "ErrorPage.html"
+            onmouseover="mouseOver(this)" 
+            onmouseleave="mouseLeave(this)"
+            onclick="onCLick(this)">Explore</a>
+
+            <a class="text"
+            href = "ErrorPage.html"
+            onmouseover="mouseOver(this)" 
+            onmouseleave="mouseLeave(this)"
+            onclick="onCLick(this)">Contact</a>
         </div>
-        <div id="page">
-        <div class="header_image">
+        <div class="header-image">
             <img class="parent" src="data\rodeo-drive.jpg" alt="LA - The City of Angels">
             <div class="centered">
-                <p class="la_text">LA - The City of Angels</p>
+                <p class="la-text">LA - The City of Angels</p>
             </div>
         </div>
-        <div class="general_info">
-            <div class="general_info_child">
-                <div class="general_info_child_image">
-                    <img src="data\griffith.jpg" alt="LA - The City of Angels" style="width: 100%; height: 100%;">
-                </div>
-                <div class="general_info_child_text"></div>
-            </div>
-            <div class="general_info_child">
-                <div class="general_info_child_image"></div>
-                <div class="general_info_child_text"></div>
-            </div>
-            <div class="general_info_child">
-                <div class="general_info_child_image"></div>
-                <div class="general_info_child_text"></div>
-            </div>
+        <div id="general-info">
         </div>
-        <div class="la_info">
-            <div class="la_info_child">                
-                <div class="la_info_child_text"></div>
-                <div class="la_info_child_image"></div>
-            </div>
+        <div id="la-info">
         </div>
-        <div class="la_info_2">
-            <div class="la_info_2_child">
-                <div class="la_info_2_child_text"></div>            
-                <div class="la_info_2_child_image"></div>
-            </div>
-            <div class="la_info_2_child_1">
-                <div class="la_info_2_child_image"></div>            
-                <div class="la_info_2_child_text"></div>
-            </div>
+        <div id="la-info-2">
         </div>
         <div class="footer">
             <div class="footer-child-quote">
-                <p style="margin-top: 40px ;">Tip the world on its side and everything loose will land
+                <p style="margin-top: 40px; color: white; font-family: sans-serif;">Tip the world on its side and everything loose will land
                 <br>in Los Angeles.</br>
                 <br>-Frank Lloyd Wright</br>
                 </p>
             </div>
             <div class="footer-child-dev-details">
-                <p style="margin-top: 10px ;">Designed by
+                <p style="margin-top: 10px; font-family: sans-serif;">Designed by
                     <br></br>
                     <br>Rohit Kumar Putcha</br></p>
-                    <p><a href="mailto: rputcha@usc.edu" style="color: white;"> rputcha@usc.edu</a>
+                    <p style="font-family: sans-serif;"><a href="mailto: rputcha@usc.edu" style="color: white;"> rputcha@usc.edu</a>
                     <br><a href="tel:425-435-1911" style="color: white;">(+1) 425 435 1911</a></br>
                     </p>
             </div>
-        </div>
         </div>
     </div>
 </body>
