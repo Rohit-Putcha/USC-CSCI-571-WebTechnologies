@@ -66,6 +66,7 @@
 
     .error-message{
         height: 300px;
+        width: 1264px;
         background-color:  rgb(47, 47, 47);
         justify-content: center;
         align-items: center;
