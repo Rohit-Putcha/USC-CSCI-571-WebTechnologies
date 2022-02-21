@@ -1,4 +1,9 @@
-.container {
+    p {
+    font-family: "Comfortaa";
+    color: white;
+    }
+    
+    .container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -13,11 +18,11 @@
         height: 80px;
     }
     .text{
-        color: white;
+        color: orange;
         font-size: 30px;
         margin: 50px;
-        font-family: sans-serif;
-        text-shadow: orange 2px 2px;
+        font-family: "Comfortaa";
+        text-shadow: white 1.5px 1.5px;
     }
     .header-image {
         display: flex;
@@ -35,7 +40,7 @@
         font-size: 35px;
         text-align: center;
         color: black;
-        font-family: sans-serif;
+        font-family: "Arial";
     }
     .header-image img{
         height:300px;
@@ -68,7 +73,7 @@
     }
 
     .error-message p{
-        font-family: sans-serif;
+        font-family: 'Arial';
         text-align: center; 
         font-size: 20px; 
         color: white;
@@ -103,4 +108,5 @@
 
     a {
     text-decoration: none;
+    color: white;
     }
