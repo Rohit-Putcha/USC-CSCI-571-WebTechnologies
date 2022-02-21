@@ -1,14 +1,14 @@
 function mouseOver(elem){
     elem.style.color = 'orange';
-    elem.style.setProperty('text-shadow', 'white 2px 2px');
+    elem.style.setProperty('text-shadow', 'white 1.5px 1.5px');
 }
 function mouseLeave(elem){
     elem.style.color = 'white';
-    elem.style.setProperty('text-shadow', 'orange 2px 2px');
+    elem.style.setProperty('text-shadow', 'orange 1.5px 1.5px');
 }
 
 function loadFromJson(){
-    fetch("data/data.json")
+    fetch("http://127.0.0.1:8080/Assignment-1/data/data.json")
     .then(response => {
     return response.json();
 })
@@ -55,24 +55,31 @@ function populateGeneralInfoTag(jsonData){
     
     Object.values(jsonData["section2"]).forEach(element => {
         var general_info_child = createDivTagWithClassName("general-info-child");
+        general_info_child.style = "height:420px; width: 260px; " + 
+        "margin-right: 20px; margin-top: 90px; margin-bottom: 90px;" +
+        "background-color: rgb(15, 15, 15); " +
+        "box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); " + 
+        "border-radius: 5px;";
 
         var image_div = createDivTagWithClassName("general-info-child-image");
+        image_div.style = " height:150px; width:240px; margin: 10px;";
 
         let image = createImageTag(element);
 
         image_div.appendChild(image);
 
         let text_div = createDivTagWithClassName("general-info-child-text");
+        text_div.style = " height:250px; width:240px; margin: 10px;";
 
         let heading = document.createElement("p");
         heading.className = "general-info-child-text-heading";
         heading.innerText = element["heading"];
-        heading.style = "text-align: left; margin: 0px; font-size: 20px; font-family:sans-serif;";
+        heading.style = "text-align: left; margin: 0px; font-size: 20px;";
 
         let paragraph = document.createElement("p");
         paragraph.className = "general-info-child-text-paragraph";
         paragraph.innerText = element["text"];
-        paragraph.style = "text-align: left; font-family:sans-serif;";
+        paragraph.style = "text-align: left;";
 
         text_div.appendChild(heading);
         text_div.appendChild(paragraph);
@@ -88,18 +95,22 @@ function populateLaInfoTag(jsonData){
     var la_info = document.getElementById("la-info");
    
     var child_div = createDivTagWithClassName("la-info-child");
+    child_div.style = " height:240px; width: 900px; justify-content: center;" + 
+    "background-color: rgb(15, 15, 15); text-align: center; display: flex;" +
+    "margin-left: 177px; margin-right: 177px; margin-top: 180px;";
 
     var image_div = createDivTagWithClassName("la-info-child-image");
-    
+    image_div.style = "height:220px; width: 400px; margin: 10px;";
+
     let image = createImageTag(undefined, "lasky.png");
     
-    let text_div = document.createElement("div");
-    text_div.className = "la-info-child-text";
+    let text_div = createDivTagWithClassName("la-info-child-text");
+    text_div.style = "height:220px; width: 420px; margin: 10px;";
 
     Object.values(jsonData["section3"]["text"]).forEach(element => {
         let text = document.createElement("p");
         text.innerText = element
-        text.style = "color: white; margin-top: 0px; text-align: justify; font-family:sans-serif; font-size: 15px;";
+        text.style = "margin-top: 0px; text-align: justify; font-size: 14px;";
 
         text_div.appendChild(text);
     });
@@ -120,19 +131,26 @@ function populateLaInfo2Tag(jsonData){
         align = !align;
         console.log(align);
         var child_div = createDivTagWithClassName("la-info-2-child");
+        child_div.style = "height:200px; width: 900px; display: flex; " + 
+        "margin-left: 177px; margin-right: 177px;";
 
         let image_div = createDivTagWithClassName("la-info-2-child-image");
+        image_div.style = "height:195px; width: 295px; margin: 5px;" +
+                            "box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);";
+
         let image = createImageTag(element);
         image_div.append(image);
 
         let text_div = createDivTagWithClassName("la-info-2-child-text");
+        text_div.style = "height:195px; width: 545px; margin: 5px;";
+
         let heading = document.createElement("p");
         heading.innerText = element["heading"];
-        heading.style = "color: white; text-align: left; margin-top: 0px; font-size: 20px; font-family:sans-serif;";
+        heading.style = "text-align: left; margin-top: 0px; font-size: 20px;";
 
         let paragraph = document.createElement("p");
         paragraph.innerText = element["text"];
-        paragraph.style = "color: white; font-size: 15px; margin-bottom: 0px; text-align: justify; font-family:sans-serif;";
+        paragraph.style = "font-size: 15px; margin-bottom: 0px; text-align: justify;";
     
         text_div.append(heading);
         text_div.append(paragraph);

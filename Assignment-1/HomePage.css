@@ -1,3 +1,8 @@
+p {
+    font-family: "Comfortaa";
+    color: white;
+}
+
 .header {
     background-color: rgb(15, 15, 15);
     display: flex;
@@ -11,8 +16,8 @@
     color: white;
     font-size: 30px;
     margin: 50px;
-    font-family: sans-serif;
-    text-shadow: orange 2px 2px;
+    font-family: "Comfortaa";
+    text-shadow: orange 1.5px 1.5px;
 }
 .header-image {
     display: flex;
@@ -25,10 +30,9 @@
 
 .header-image .centered .la-text {
     font-size: 35px;
-    text-align: center;
     color: orange;
-    font-family: sans-serif;
-    text-shadow: white 2px 2px;
+    font-family: "Comfortaa";
+    text-shadow: white 1.5px 1.5px;
 }
 .header-image img{
     height:300px;
@@ -40,7 +44,7 @@
 .centered {
     position: absolute;
     float: left;
-    left: 450px;
+    left: 430px;
     top: 95px;
 }
 
@@ -49,74 +53,15 @@
     width: 1264px;
     justify-content: center;
     background-color: rgb(47, 47, 47);
-    text-align: center;
     display: flex;
-    color: white;
-}
-
-.general-info-child{
-    height:430px;
-    width: 260px;
-    justify-content: center;
-    text-align: center;
-    margin-right: 20px;
-    margin-top: 90px;
-    margin-bottom: 90px;
-    background-color: rgb(15, 15, 15);;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
-}
-
-.general-info-child-image{
-    height:150px;
-    width: 240px;
-    justify-content: center;
-    text-align: center;
-    margin: 10px;
-}
-
-.general-info-child-text{
-    height:250px;
-    width: 240px;
-    justify-content: center;
-    text-align: center;
-    margin: 10px;
 }
 
 #la-info{
     height:600px;
     width: 1264px;
     justify-content: center;
+    text-align: center;
     background-color: rgb(15, 15, 15);
-    text-align: center;
-}
-
-.la-info-child{
-    height:240px;
-    width: 900px;
-    justify-content: center;
-    background-color: rgb(15, 15, 15);;
-    text-align: center;
-    margin-left: 177px;
-    margin-right: 177px;
-    margin-top: 180px;
-    display: flex;
-}
-
-.la-info-child-image{
-    height:220px;
-    width: 400px;
-    justify-content: center;
-    text-align: center;
-    margin: 10px;
-}
-
-.la-info-child-text{
-    height:220px;
-    width: 420px;
-    justify-content: center;
-    text-align: center;
-    margin: 10px;
 }
 
 #la-info-2{
@@ -127,32 +72,6 @@
     text-align: center;
 }
 
-.la-info-2-child{
-    height:200px;
-    width: 900px;
-    justify-content: center;
-    text-align: center;
-    margin-left: 177px;
-    margin-right: 177px;
-    display: flex;
-}
-
-.la-info-2-child-image{
-    height:195px;
-    width: 295px;
-    justify-content: center;
-    text-align: center;
-    margin: 5px;
-}
-
-.la-info-2-child-text{
-    height:195px;
-    width: 545px;
-    justify-content: center;
-    text-align: center;
-    margin: 5px;
-}
-
 .footer{
     height:150px;
     width: 1264px;
@@ -161,7 +80,6 @@
     text-align: center;
     display: flex;
     align-items: center;
-    color: white;
 }
 
 .footer-child-quote {
@@ -169,7 +87,6 @@ width: 50%;
 height: 100%;
 float: left;
 text-align: center;
-color: white;
 }   
 
 .footer-child-dev-details{
@@ -177,7 +94,6 @@ width: 50%;
 height: 100%;
 float: left;
 text-align:center;
-color: white;
 }   
 
 #container {
@@ -188,6 +104,7 @@ color: white;
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 body{
