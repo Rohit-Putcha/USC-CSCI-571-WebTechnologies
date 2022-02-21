@@ -116,3 +116,7 @@
         margin: 0px; 
         padding: 0px;
     }
+
+    .footer-child-dev-details p a:hover{
+        text-decoration: underline;
+    }
