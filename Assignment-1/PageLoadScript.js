@@ -8,7 +8,7 @@ function mouseLeave(elem){
 }
 
 function loadFromJson(){
-    fetch("http://127.0.0.1:8080/Assignment-1/data/data.json")
+    fetch("data/data.json")
     .then(response => {
     return response.json();
 })
