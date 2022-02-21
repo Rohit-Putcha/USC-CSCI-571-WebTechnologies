@@ -14,7 +14,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 1262px;
+        width: 1264px;
         height: 80px;
     }
     .text{
@@ -28,7 +28,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 1262px;
+        width: 1264px;
         height: 300px;
         position: relative;
         background-image: url("data\\404-featured.jpg");
@@ -44,7 +44,7 @@
     }
     .header-image img{
         height:300px;
-        width: 1262px;
+        width: 1264px;
         object-fit: cover;
         object-position: 50% 50%;
     }
@@ -66,7 +66,7 @@
 
     .error-message{
         height: 300px;
-        width: 1262px;
+        width: 1264px;
         background-color:  rgb(47, 47, 47);
         justify-content: center;
         align-items: center;
@@ -82,7 +82,7 @@
 
     .footer{
     height:150px;
-    width: 1262px;
+    width: 1264px;
     justify-content: center;
     background-color: rgb(15, 15, 15);;
     text-align: center;
@@ -121,11 +121,10 @@
         text-decoration: underline;
     }
 
-   
     #border{
         position: fixed;
         top: 0;
-        width: 1262px;
+        width: 1264px;
         background-color: orange;
         height: 1px;
         z-index: 1;
