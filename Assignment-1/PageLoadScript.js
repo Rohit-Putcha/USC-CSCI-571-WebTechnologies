@@ -62,24 +62,24 @@ function populateGeneralInfoTag(jsonData){
         "border-radius: 5px;";
 
         var image_div = createDivTagWithClassName("general-info-child-image");
-        image_div.style = " height:150px; width:240px; margin: 10px;";
+        image_div.style = "height:140px; width:220px; margin: 20px";
 
         let image = createImageTag(element);
-
+        image.style.borderRadius = "3px";
         image_div.appendChild(image);
 
         let text_div = createDivTagWithClassName("general-info-child-text");
-        text_div.style = " height:250px; width:240px; margin: 10px;";
+        text_div.style = " height:240px; width:220px; margin: 20px;";
 
         let heading = document.createElement("p");
         heading.className = "general-info-child-text-heading";
         heading.innerText = element["heading"];
-        heading.style = "text-align: left; margin: 0px; font-size: 20px;";
+        heading.style = "text-align: left; margin: 0px; font-size: 18px;";
 
         let paragraph = document.createElement("p");
         paragraph.className = "general-info-child-text-paragraph";
         paragraph.innerText = element["text"];
-        paragraph.style = "text-align: left;";
+        paragraph.style = "text-align: left; font-size: 14px; line-height: 120%";
 
         text_div.appendChild(heading);
         text_div.appendChild(paragraph);
@@ -135,7 +135,7 @@ function populateLaInfo2Tag(jsonData){
         "margin-left: 177px; margin-right: 177px;";
 
         let image_div = createDivTagWithClassName("la-info-2-child-image");
-        image_div.style = "height:195px; width: 295px; margin: 5px;" +
+        image_div.style = "height:180px; width: 280px; margin: 10px;" +
                             "box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);";
 
         let image = createImageTag(element);
@@ -146,11 +146,11 @@ function populateLaInfo2Tag(jsonData){
 
         let heading = document.createElement("p");
         heading.innerText = element["heading"];
-        heading.style = "text-align: left; margin-top: 0px; font-size: 20px;";
+        heading.style = "text-align: left; margin-top: 6px; font-size: 16px; font-weight: bold";
 
         let paragraph = document.createElement("p");
         paragraph.innerText = element["text"];
-        paragraph.style = "font-size: 15px; margin-bottom: 0px; text-align: justify;";
+        paragraph.style = "font-size: 14px; margin-bottom: 6px; text-align: justify;";
     
         text_div.append(heading);
         text_div.append(paragraph);
