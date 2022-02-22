@@ -8,7 +8,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1264px;
+    width: 1262px;
     height: 80px;
 }
 
@@ -18,12 +18,15 @@ p {
     margin: 50px;
     font-family: "Comfortaa";
     text-shadow: orange 1.5px 1.5px;
+    width: 130px;
+    text-align: center;
 }
+
 .header-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1264px;
+    width: 1262px;
     height: 300px;
     position: relative;
 }
@@ -36,7 +39,7 @@ p {
 }
 .header-image img{
     height:300px;
-    width: 1264px;
+    width: 1262px;
     object-fit: cover;
     object-position: 50% 85%;
 }
@@ -50,7 +53,7 @@ p {
 
 #general-info{
     height:600px;
-    width: 1264px;
+    width: 1262px;
     justify-content: center;
     background-color: rgb(47, 47, 47);
     display: flex;
@@ -58,7 +61,7 @@ p {
 
 #la-info{
     height:600px;
-    width: 1264px;
+    width: 1262px;
     justify-content: center;
     text-align: center;
     background-color: rgb(15, 15, 15);
@@ -66,7 +69,7 @@ p {
 
 #la-info-2{
     height:600px;
-    width: 1264px;
+    width: 1262px;
     justify-content: center;
     background-color: rgb(47, 47, 47);
     text-align: center;
@@ -74,7 +77,7 @@ p {
 
 .footer{
     height:150px;
-    width: 1264px;
+    width: 1262px;
     justify-content: center;
     background-color: rgb(15, 15, 15);;
     text-align: center;
@@ -114,13 +117,13 @@ a{
 body{
     margin: 0px; 
     padding: 0px;
-    overflow-x: hidden;
+    width: 1262px;
 }
 
 #border{
     position: fixed;
     top: 0;
-    width: 1264px;
+    width: 1262px;
     background-color: orange;
     height: 1px;
     z-index: 1;

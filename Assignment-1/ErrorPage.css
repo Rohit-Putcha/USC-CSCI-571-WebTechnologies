@@ -14,21 +14,25 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 1264px;
+        width: 1262px;
         height: 80px;
     }
+    
     .text{
         color: orange;
         font-size: 30px;
         margin: 50px;
         font-family: "Comfortaa";
         text-shadow: white 1.5px 1.5px;
+        width: 130px;
+        text-align: center;
     }
+
     .header-image {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 1264px;
+        width: 1262px;
         height: 300px;
         position: relative;
         background-image: url("data\\404-featured.jpg");
@@ -44,7 +48,7 @@
     }
     .header-image img{
         height:300px;
-        width: 1264px;
+        width: 1262px;
         object-fit: cover;
         object-position: 50% 50%;
     }
@@ -66,7 +70,7 @@
 
     .error-message{
         height: 300px;
-        width: 1264px;
+        width: 1262px;
         background-color:  rgb(47, 47, 47);
         justify-content: center;
         align-items: center;
@@ -82,7 +86,7 @@
 
     .footer{
     height:150px;
-    width: 1264px;
+    width: 1262px;
     justify-content: center;
     background-color: rgb(15, 15, 15);;
     text-align: center;
@@ -115,7 +119,8 @@
     body{
         margin: 0px; 
         padding: 0px;
-        overflow-x: hidden;
+        
+        width: 1262px;
     }
 
     .footer-child-dev-details p a:hover{
@@ -125,7 +130,7 @@
     #border{
         position: fixed;
         top: 0;
-        width: 1264px;
+        width: 1262px;
         background-color: orange;
         height: 1px;
         z-index: 1;
