@@ -56,7 +56,7 @@ function populateGeneralInfoTag(jsonData){
     Object.values(jsonData["section2"]).forEach(element => {
         var general_info_child = createDivTagWithClassName("general-info-child");
         general_info_child.style = "height:420px; width: 260px; " + 
-        "margin-right: 20px; margin-top: 90px; margin-bottom: 90px;" +
+        "margin-right: 19px; margin-top: 90px; margin-bottom: 90px;" +
         "background-color: rgb(15, 15, 15); " +
         "box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); " + 
         "border-radius: 5px;";
@@ -97,7 +97,7 @@ function populateLaInfoTag(jsonData){
     var child_div = createDivTagWithClassName("la-info-child");
     child_div.style = " height:240px; width: 900px; justify-content: center;" + 
     "background-color: rgb(15, 15, 15); text-align: center; display: flex;" +
-    "margin-left: 177px; margin-right: 177px; margin-top: 180px;";
+    "margin-left: 176px; margin-right: 176px; margin-top: 180px; margin-bottom: 180px;";
 
     var image_div = createDivTagWithClassName("la-info-child-image");
     image_div.style = "height:220px; width: 400px; margin: 10px;";
@@ -132,7 +132,7 @@ function populateLaInfo2Tag(jsonData){
         console.log(align);
         var child_div = createDivTagWithClassName("la-info-2-child");
         child_div.style = "height:200px; width: 900px; display: flex; " + 
-        "margin-left: 177px; margin-right: 177px;";
+        "margin-left: 176px; margin-right: 176px;";
 
         let image_div = createDivTagWithClassName("la-info-2-child-image");
         image_div.style = "height:180px; width: 280px; margin: 10px;" +
