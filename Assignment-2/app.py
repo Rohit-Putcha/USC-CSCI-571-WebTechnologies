@@ -1,5 +1,5 @@
 import json
-from flask import Flask, request, render_template
+from flask import Flask, request, send_from_directory
 from flask_cors import CORS
 import pandas as pd
 import joblib
@@ -10,7 +10,7 @@ CORS(app)
 
 @app.route('/')
 def home():
-    return render_template('IndexPage.html')
+    return send_from_directory('static','scripts/IndexPage.html')
 
 @app.route('/bpi/', methods=['POST'])
 def calculateBpi():
@@ -18,11 +18,13 @@ def calculateBpi():
     age = float(input['age'])
     weight = float(input['weight'])
 
-
-    clf = joblib.load("mysite/static/regr.pkl")
+    clf = joblib.load("mysite/static/scripts/new_regr.pkl")
 
     x = pd.DataFrame([[age, weight]], columns=["Age", "Weight"])
     prediction = clf.predict(x)[0]
 
     response = {'bpi': str(prediction)}
     return json.dumps(response)
+
+if __name__ == "__main__":
+    app.run()
