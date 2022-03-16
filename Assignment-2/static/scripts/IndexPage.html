@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <title>Blood Pressure Calculator</title>
+    <link rel="stylesheet" href="../static/scripts/IndexPageStyle.css"></link>
+    <script type="text/javascript" src="../static/scripts/CalculateBpi.js"></script>
+    </script>
+</head>
+<body onload="populateSidebar()">
+    
+    
+    
+    <div id="header">
+        <button id="more-info" onclick="openNav()">More Info</button>
+    </div>
+    <div id="parent-container">
+        <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      </div>
+        <div id="image-container">
+            <div id="form-container">
+                <h2>Blood Pressure Predictor</h2>
+                <div id="form-div">
+                    <h3>Fill out the form to get your Blood Pressure estimate!</h3>
+                    <form method="post" action="javascript:void(0)">
+                    <div class="divTable">
+                        <div class="divTableBody">
+                            <div class="divTableRow">
+                                <div class="divTableCell">
+                                    <label for="Age">Age<span>*</span></label>
+                                </div>
+                                <div class="divTableCell">
+                                    <input name="Age" id="Age" type="number" placeholder="Enter age in years" required min="1"/>
+                                </div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">
+                                    <label for="Weight">Weight<span>*</span></label>
+                                </div>
+                                <div class="divTableCell">
+                                    <input name="Weight" id="Weight" type="number" placeholder="Enter weight in kg" required min="1"/>
+                                </div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">
+                                    <input
+                                    id = "submitBtn"
+                                    name="calcButton" 
+                                    type="submit" 
+                                    class="button" 
+                                    value="SUBMIT"
+                                    onclick="calcBpi()"/>
+                                </div>
+                                <div class="divTableCell">
+                                    <input
+                                    id= "clrBtn"
+                                    name="clearButton" 
+                                    type="reset" 
+                                    class="button" 
+                                    value="CLEAR"
+                                    onclick="clearInputFields()"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div id="result-div">
+            <p id="bpi-value"></p>
+        </div>
+    </div>
+</body>

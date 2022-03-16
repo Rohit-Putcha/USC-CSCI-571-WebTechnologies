@@ -1,0 +1,243 @@
+label {
+    text-align: center;
+    clear: both;
+    font-size: 18px;
+}
+
+label span{
+    color: red;
+    font-size: 18px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 1280px;
+}
+
+h2{
+    color: cornsilk;
+    text-align: center;
+}
+
+h3{
+    color: black;
+    text-align: center;
+}
+
+#header{
+    background-color: darkred; 
+    width: 1280px; 
+    height: 50px;
+    display: flex;
+    justify-content: right;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+#more-info{
+        font-size: 15px;
+        cursor: pointer;
+        background-color: cornsilk;
+        color: black;
+        border: none;
+  }
+  
+#more-info:hover {
+    background-color: darkred;
+  }
+
+.sidebar {
+    height: 520px;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: cornsilk;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidebar a {
+    text-decoration: none;
+    font-size: 25px;
+    color: darkred;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: cornsilk;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+.divTable{
+	display: table;
+	width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.divTableRow {
+	display: table-row;
+}
+
+.divTableCell {
+	display: table-cell;
+    width: 200px;
+}
+
+.divTableRow :first-child{
+    text-align: right;
+    margin: 10px;
+}
+
+.divTableRow :last-child{
+    text-align: left;
+    margin: 10px;
+}
+
+.divTableBody {
+	display: table-row-group;
+}
+
+#form-container{
+    width: 780px;
+    height: 300px;
+    text-align: center;
+    margin-left: 80px;
+    overflow: hidden;
+}
+
+#parent-container{
+    width: 1280px;
+    height: 535px;
+    background-color: cornsilk;
+    overflow: hidden;
+}
+
+#image-container{
+    width: 1280px;
+    height: 350px;
+    background-image: url(../images/background-image.jpg);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.822);
+    overflow: hidden;
+}
+
+#form-div{
+    margin-left: 140px;
+    margin-right: 140px;
+    height: 250px;
+    width: 500px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 255, 255));
+    overflow: hidden;
+}
+
+#result-div{
+    margin-left: 220px;
+    margin-top: 50px;
+    width: 500px;
+    height: 100px;
+    background-color: darkred;
+    border-radius: 20px;
+    border: 1px solid;
+}
+
+#bpi-value{
+    height: 30px;
+    width: 300px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    color: cornsilk;
+}
+
+#submitBtn{
+    background-color: rgb(0, 119, 255);
+    height: 30px;
+    width: 70px;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 3px blue;
+}
+
+#clrBtn{
+    background-color:darkred;
+    height: 30px;
+    width: 70px;
+    text-align: center;
+    color: white;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 3px black;
+}
+
+#sidebar-text-div{
+    text-align: center;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+#sidebar-text{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+#sidebar-image-2-div{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#sidebar-image-2{
+    margin-left: 0px;
+    margin-right: 18px;
+    margin-bottom: 2px;
+    width: 480px;
+    height: 560px;
+}
+
+#sidebar-image-1-div{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#sidebar-image-1{
+    margin-left: 0px;
+    margin-right: 18px;
+    margin-bottom: 5px;
+    width: 480px;
+    height: 280px;
+}
